@@ -1,7 +1,8 @@
 import './css/NavBar.css';
-//import {CartWidget} from "./CartWidget"
-import logo from '../imagenes/logo.png'
+import CartWidget from "./CartWidget"
+//import logo from '../imagenes/logo.png'
 import { Link } from 'react-router-dom';
+import LoginButton from './LoginButton';
 
 const NavBar = () => {
 
@@ -9,7 +10,7 @@ const NavBar = () => {
         <header className="header">
             
             <div className="logo">
-               <Link to="/"><img src= {logo}alt="logo" /></Link>  
+               {/* <Link to="/"><img src= {logo}alt="logo" /></Link>   */}
             </div>
             
             <nav className="nav">
@@ -20,15 +21,15 @@ const NavBar = () => {
                 <li><Link to="/">Ubicacion</Link></li>
                 <li><Link to="/">Contacto</Link></li>  
                 </ul>
- 
-            </nav>
             <div>
-            {/* <Link to="/cart"><CartWidget/></Link> */}
+                    <LoginButton/>
+                    <Link to="/cart"><CartWidget/></Link>
             </div> 
+            </nav>
 
         </header>
     )
 
 }
 
-export default NavBar
+export default NavBar;

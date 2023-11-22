@@ -1,0 +1,12 @@
+.cart-widget {
+    display: flex;
+    flex-direction:row;
+    align-self: center;
+    height: 5px;
+    min-height: 5px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    border-radius: 5px;
+}

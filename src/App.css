@@ -1,8 +1,19 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 100vw;
   text-align: center;
+  overflow: hidden;
+}
+
+:root {
+  --text-l: 20px;
+  --text-m: 15px;
+  --text-s: 10px;
+  --primary-color: #256bac;
+  --secundaty-color:#8f3838;
+  --tertiary-color: #8f3838;
+  --button-color-1: #225f97;
+  --button-color-2:#2598ac;
+  --shadow-color:#787b7c;
 }
 
 .logo {
@@ -12,12 +23,34 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 10px var(--shadow-color));
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+header nav {
+  display: flex;
+  width: 100vw;
+  padding: 10px 25px 10px 25px;
+  margin: 10px;
+
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

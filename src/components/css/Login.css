@@ -1,0 +1,25 @@
+main {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+.login-container {
+    max-width: 300px;
+    margin: auto;
+    background: rgb(44, 68, 116);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(76, 50, 146);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.show-password {
+    margin-top: 10px;
+}
