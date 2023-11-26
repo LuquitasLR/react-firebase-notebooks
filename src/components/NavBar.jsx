@@ -2,7 +2,6 @@ import './css/NavBar.css';
 import CartWidget from "./CartWidget"
 //import logo from '../imagenes/logo.png'
 import { Link } from 'react-router-dom';
-import LoginButton from './LoginButton';
 
 const NavBar = () => {
 
@@ -22,7 +21,6 @@ const NavBar = () => {
                 <li><Link to="/">Contacto</Link></li>  
                 </ul>
             <div>
-                    <LoginButton/>
                     <Link to="/cart"><CartWidget/></Link>
             </div> 
             </nav>
